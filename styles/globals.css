@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* globals.css */
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global Styles */
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f7f9fc; /* Light gray background */
+    color: #333; /* Dark text for readability */
+  }
+  
+  /* Container Styles */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #4a90e2; /* Blue background */
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  /* Button Styles */
+  button {
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Messaging Styles */
+  .messaging-container {
+    display: flex;
+    flex-direction: column;
+    max-height: 500px; /* Adjust as needed */
+    overflow-y: auto;
+  }
+  
+  .message {
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .message p {
+    margin: 0;
+  }
+  
+  .message .sender {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* To-Do List Styles */
+  .todo-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .todo-item {
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+  }
+  
+  .todo-item input[type="checkbox"] {
+    margin-right: 0.5rem;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .container {
+      padding: 0.5rem;
+    }
+  
+    header h1 {
+      font-size: 1.5rem;
+    }
+  }
+  /* globals.css */
+
+/* Additional Styles for To-Do List */
+.todo-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .todo-item {
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+  }
+  
+  .todo-item input[type="checkbox"] {
+    margin-right: 0.5rem;
+  }
+  
+  .todo-item .line-through {
+    text-decoration: line-through;
+    color: #999;
+  }
+  
