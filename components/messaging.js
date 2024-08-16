@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-export default function messaging() {
+export default function Messaging() {
   const [messages, setMessages] = useState([]);
 
   useEffect(() => {

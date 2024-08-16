@@ -1,4 +1,9 @@
+// next.config.mjs
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-export default nextConfig;
+const NextConfig = {
+    output: 'export', // Menyediakan konfigurasi untuk static export
+    trailingSlash: true, // Opsional: menambahkan trailing slash ke URL
+  };
+  
+  export default NextConfig;
+  
